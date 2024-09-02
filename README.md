@@ -105,8 +105,10 @@ To run this project locally, follow these steps:
     ```
     http://127.0.0.1:5000/
     ```
-
-3. **Enter a search query and submit the form:**
+3. **Or follow the link below:**
+     https://nyikomnisii.github.io/Web-scrapinng-google-scholar/templates/index.html
+   
+5. **Enter a search query and submit the form:**
 
     The application will scrape Google Scholar for the specified search query, process the data, and display visualizations of publication trends and co-authorship networks.
 
@@ -131,6 +133,7 @@ google-scholar-scraper/
 - BeautifulSoup
 - plotly
 - networkx
+
 
 You can install the dependencies using the `requirements.txt` file:
 
