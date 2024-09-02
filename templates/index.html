@@ -4,14 +4,168 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0e0e0;
+    color: #333;
+}
+
+.container {
+    max-width: 700px;
+    margin: 60px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #007bff;
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+input[type="text"] {
+    width: 60%;
+    padding: 12px 15px;
+    margin-bottom: 0;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    box-sizing: border-box;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+    outline: none;
+}
+
+button[type="submit"] {
+    padding: 12px 25px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+button[type="submit"]:active {
+    background-color: #004494;
+    transform: translateY(0);
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #555;
+}
+
+.recent-articles, .sidebar, footer {
+    margin-top: 40px;
+}
+
+.recent-articles h2, .sidebar h3 {
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.recent-articles ul, .sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.recent-articles li, .sidebar li {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.recent-articles a, .sidebar a {
+    text-decoration: none;
+    color: #007bff;
+    transition: color 0.3s;
+}
+
+.recent-articles a:hover, .sidebar a:hover {
+    color: #0056b3;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9em;
+    color: #777;
+}
+
+    </style>
     <title>Research Analysis</title>
 </head>
 <body>
-    <h1>Research Analysis</h1>
-    <form action="/search" method="post">
-        <input type="text" name="search_query" placeholder="Search:">
-        <button type="submit">Search</button>
-    </form>
+    <header>
+        <h1>Research Analysis</h1>
+    </header>
+
+    <main>
+        <!-- Introduction Section -->
+        <section class="intro">
+            <p>Welcome to Research Analysis, where we explore the latest trends, insights, and breakthroughs in various fields of study. Our goal is to provide you with in-depth research articles and analysis to help you stay informed and ahead of the curve.</p>
+        </section>
+
+        <!-- Search Form -->
+        <section class="search">
+            <form action="/search" method="post">
+                <input type="text" name="search_query" placeholder="Search...">
+                <button type="submit">Search</button>
+            </form>
+        </section>
+
+        <!-- Recent Articles Section -->
+        <section class="recent-articles">
+            <h2>Recent Articles</h2>
+            <ul>
+                <li><a href="#">Understanding the Impact of Artificial Intelligence on Modern Industries</a></li>
+                <li><a href="#">Climate Change: Current Research and Future Projections</a></li>
+                <li><a href="#">The Role of Data Analysis in Healthcare Innovation</a></li>
+                <li><a href="#">Exploring Renewable Energy Solutions for a Sustainable Future</a></li>
+            </ul>
+        </section>
+
+        <!-- Sidebar Section -->
+        <aside class="sidebar">
+            <h3>Resources</h3>
+            <ul>
+                <li><a href="https://www.scirp.org/journal/indexbytitle">Research Journals</a></li>
+                <li><a href="https://www.stitchdata.com/resources/data-analysis-tools/">Data Analysis Tools</a></li>
+                <li><a href="https://www.coursera.org/courses?query=data%20analytics">Online Courses</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Research Analysis. All Rights Reserved. developed by Nyiko Mnisi</p>
+        <p>Contact Me: <a href="mailto:nyikodeartkid@gmail.com">nyikodeartkid@gmail.com </a></p>
+    </footer>
 </body>
 </html>
